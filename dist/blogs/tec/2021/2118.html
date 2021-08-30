@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AJAX相关 | ThisLong的小屋</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/ThisLongHouse/logo.png">
+    <meta name="description" content="长顺长安长相依，花开花谢花化泥,纪念我们逝去的时光。">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/ThisLongHouse/assets/css/0.styles.40154dff.css" as="style"><link rel="preload" href="/ThisLongHouse/assets/js/app.931cfb47.js" as="script"><link rel="preload" href="/ThisLongHouse/assets/js/5.264a65b6.js" as="script"><link rel="preload" href="/ThisLongHouse/assets/js/1.fa7ca16c.js" as="script"><link rel="preload" href="/ThisLongHouse/assets/js/33.cfe8075e.js" as="script"><link rel="prefetch" href="/ThisLongHouse/assets/js/10.635002d6.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/11.923df27b.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/12.58f9b757.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/13.b17e0c99.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/14.9bb04648.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/15.45758a68.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/16.3db37c61.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/17.38d7c658.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/18.df183a3f.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/19.7b6f2006.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/20.9a375e47.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/21.13691576.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/22.692464dc.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/23.cd01b58e.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/24.77b6ec02.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/25.f70d545b.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/26.520eaa0e.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/27.2126f3cc.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/28.9f893973.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/29.da84a534.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/3.615e524c.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/30.3d228387.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/31.1068497a.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/32.ac315ea1.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/34.df26689e.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/35.b50ee592.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/4.e8b9f8ad.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/6.12b68502.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/7.99e367c4.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/8.450c9662.js"><link rel="prefetch" href="/ThisLongHouse/assets/js/9.033dc4bf.js">
+    <link rel="stylesheet" href="/ThisLongHouse/assets/css/0.styles.40154dff.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-b51f5500><div data-v-b51f5500><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-b51f5500 data-v-b51f5500><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-5cb9a64e data-v-b51f5500 data-v-b51f5500><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>ThisLong的小屋</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>一条龙宝宝</span>
+            
+          <span data-v-5cb9a64e>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-b51f5500><div data-v-b51f5500><div id="smart" class="wrapper-page" style="background-image:url(https://img-blog.csdnimg.cn/56973aec00ee4c2aa459965c6a2ec767.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAPGRpdiBjbGFzcz0n6b6Z5a6d5a6dJz4=,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center);background-position-x:center;background-position-y:center;background-size:cover;background-repeat-x:no-repeat;background-repeat-y:no-repeat;" data-v-b51f5500><header class="navbar" data-v-b51f5500><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ThisLongHouse/" class="home-link router-link-active"><img src="/ThisLongHouse/logo.png" alt="ThisLong的小屋" class="logo"> <span class="site-name">ThisLong的小屋</span></a> <div class="links"><div id="dayNightSwitch" class="generalWrapper" data-v-32f44868><a class="click" data-v-32f44868><div class="onOff daySwitch" data-v-32f44868><div class="star star1" data-v-32f44868></div> <div class="star star2" data-v-32f44868></div> <div class="star star3" data-v-32f44868></div> <div class="star star4" data-v-32f44868></div> <div class="star star5" data-v-32f44868></div> <div class="star sky" data-v-32f44868></div> <div class="sunMoon" data-v-32f44868><div class="crater crater1" data-v-32f44868></div> <div class="crater crater2" data-v-32f44868></div> <div class="crater crater3" data-v-32f44868></div> <div class="cloud part1" data-v-32f44868></div> <div class="cloud part2" data-v-32f44868></div></div></div></a></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ThisLongHouse/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ThisLongHouse/categories/心情物语/" class="nav-link"><i class="iconfont undefined"></i>
+  心情物语
+</a></li><li class="dropdown-item"><!----> <a href="/ThisLongHouse/categories/技术笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  技术笔记
+</a></li><li class="dropdown-item"><!----> <a href="/ThisLongHouse/categories/杂谈游记/" class="nav-link"><i class="iconfont undefined"></i>
+  杂谈游记
+</a></li></ul></div></div><div class="nav-item"><a href="/ThisLongHouse/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/ThisLongHouse/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/ThisLongHouse/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-b51f5500></div> <aside class="sidebar" data-v-b51f5500><div class="personal-info-wrapper" data-v-03833281 data-v-b51f5500><img src="https://img-blog.csdnimg.cn/bc3f88ce0a9f4b7485596e45792611bd.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAPGRpdiBjbGFzcz0n6b6Z5a6d5a6dJz4=,size_18,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="author-avatar" class="personal-img" data-v-03833281> <h3 class="name" data-v-03833281>
+    一条龙宝宝
+  </h3> <div class="num" data-v-03833281><div data-v-03833281><h3 data-v-03833281>23</h3> <h6 data-v-03833281>文章</h6></div> <div data-v-03833281><h3 data-v-03833281>17</h3> <h6 data-v-03833281>标签</h6></div></div> <hr data-v-03833281></div> <nav class="nav-links"><div class="nav-item"><a href="/ThisLongHouse/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ThisLongHouse/categories/心情物语/" class="nav-link"><i class="iconfont undefined"></i>
+  心情物语
+</a></li><li class="dropdown-item"><!----> <a href="/ThisLongHouse/categories/技术笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  技术笔记
+</a></li><li class="dropdown-item"><!----> <a href="/ThisLongHouse/categories/杂谈游记/" class="nav-link"><i class="iconfont undefined"></i>
+  杂谈游记
+</a></li></ul></div></div><div class="nav-item"><a href="/ThisLongHouse/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/ThisLongHouse/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/ThisLongHouse/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-5cb9a64e data-v-b51f5500><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>AJAX相关</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>一条龙宝宝</span>
+            
+          <span data-v-5cb9a64e>2020 - </span>
+          2021
+        </a></span></div></div></div> <div data-v-b51f5500><main class="page" style="padding-right:0;"><div class="page-title" style="display:none;"><h1 class="title">AJAX相关</h1> <div class="page-info" data-v-0efa1f05><i class="iconfont reco-account" data-v-0efa1f05><span data-v-0efa1f05>一条龙宝宝</span></i> <i class="iconfont reco-date" data-v-0efa1f05><span data-v-0efa1f05>2021-07-20</span></i> <i class="iconfont reco-eye" data-v-0efa1f05><span id="/ThisLongHouse/blogs/tec/2021/2118.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-0efa1f05><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-0efa1f05><span class="tag-item" data-v-0efa1f05>AJAX</span><span class="tag-item" data-v-0efa1f05>服务器请求</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p class="custom-block-title">介绍</p> <p>ajax 请求相关介绍，原生 js，es6，jQuery，axios 分别如何发送请求<br></p></div> <h3 id="创建简易服务器-仅本机可以访问"><a href="#创建简易服务器-仅本机可以访问" class="header-anchor">#</a> 创建简易服务器(仅本机可以访问)</h3> <p>使用 json-server 模拟一个服务器请求</p> <ul><li>1：在项目文件夹最外层创建一个 data 文件夹（严禁放在 src 内,在 src 内还需要运行 vue 的服务器。）</li> <li>2：在 data 文件夹运行命令行 <code>json-server --watch data.json -p 3008</code>，(data.json 为 json 文件的文件名。)
+出现 hai 就是运行成功</li></ul> <h4 id="json-文件格式"><a href="#json-文件格式" class="header-anchor">#</a> json 文件格式</h4> <p>json 文件还被用来 ajax 请求传递数据的格式</p> <ul><li>创建的文件内容是一个对象，json 文件的格式有着严格的要求，最外层是一个{}，里面是多个对象。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;posts&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json-server&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;typicode&quot;</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;comments&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;body&quot;</span><span class="token operator">:</span> <span class="token string">&quot;some comment&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;postId&quot;</span><span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;typicode&quot;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>与对象格式基本一样，内部所有内容必须使用双引号（除数组和布尔值外）</li> <li>最后一项后<code>不可以</code>添加逗号</li></ul> <h4 id="发送请求"><a href="#发送请求" class="header-anchor">#</a> 发送请求</h4> <ul><li>3：安装运行依赖
+<code>npm i axios</code></li> <li>4.在 created 内发送请求获取数据</li></ul> <p>请求方法：
+get 是获取,查
+post 添加，增
+put 修改 改
+patch 修改 改
+(put 是全部更新，patch 是局部更新)
+DELETE 删除</p> <p>基础请求:
+完整请求由 前缀+地址+方法+参数
+筛选：</p> <ul><li><p>GET 前缀/posts?title=json-server&amp;author=typicode
+title=json-server 并且 author=typicode</p></li> <li><p>GET 前缀/posts?id=1&amp;id=2 id=1 或 id=2</p></li> <li><p>GET 前缀/comments?author.name=typicode</p></li></ul> <p>分页：</p> 获取第七页的
+limit 是手动设置每页的条数，取某一页，不全部取
+<p>不设置的话默认 10 条 1 页</p> <p>排序：</p> <p>对所有文章通过 sort=views 升序</p> <p>对第一篇文章下的评论进行排序</p> <p>截取 slice</p> <p>范围 Operators</p> <p>全字查询 Full-text search</p> <p>查询是否包含某一子属性 Relationships</p> <h3 id="ajax"><a href="#ajax" class="header-anchor">#</a> ajax</h3> <p>异步的 javascpipt 请求，在不重新加载整个页面的情况下，向服务器发送请求获取数据进而更新部分网页的艺术。</p> <h4 id="ajax-的几种形式"><a href="#ajax-的几种形式" class="header-anchor">#</a> ajax 的几种形式</h4> <ul><li>原生 ajax</li> <li>juqery ajax</li> <li>es6 fetch</li> <li>axios 插件</li></ul> <h4 id="json-文件模拟简易服务器"><a href="#json-文件模拟简易服务器" class="header-anchor">#</a> json 文件模拟简易服务器</h4> <p>json 文件还被用来 ajax 请求传递数据的格式</p> <ul><li>与对象格式基本一样，内部所有内容必须使用双引号（出数组和布尔值外）</li> <li>最后一项后不可以添加逗号</li></ul> <p>命令行流程</p> <ul><li>桌面打开命令行输入 npm i json-server -g</li> <li>显示版本号则下载成功</li> <li>在对应文件夹创建 data 文件夹和 json 文件</li> <li>在 data 文件夹运行命令行 json-server --watch data.json -p 3008</li> <li>简易服务器完成</li></ul> <h4 id="原生-ajax"><a href="#原生-ajax" class="header-anchor">#</a> 原生 ajax</h4> <ul><li><p>json-server 搭建模拟本地服务器</p></li> <li><p>接收 get 参数（get 用来取）</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//发送简单的get请求，一般为服务器向服务器发送请求</span>
+<span class="token comment">//http://jsonplaceholder.typicode.com/posts</span>
+<span class="token comment">//http://jsonplaceholder.typicode.com/posts/1 id为1的一个数据</span>
+<span class="token comment">//http://jsonplaceholder.typicode.com/posts/1/comments id为1的文章的评论</span>
+<span class="token comment">//http://jsonplaceholder.typicode.com/comments?postId=1 评论里查找postId为1的评论</span>
+<span class="token comment">//get 传递参数 可以直接在请求地址后添加？查询条件。</span>
+<span class="token comment">//前后台交互的方式为通过接口发送请求进行交互，这是获取数据的主要方法。看懂请求内容是必备技能。</span>
+<span class="token comment">//后台服务器数据接口 返回文章列表20条</span>
+<span class="token comment">//获取后台数据步骤</span>
+<span class="token comment">//1.请求类型</span>
+<span class="token comment">//2.请求地址</span>
+<span class="token comment">//3.是否支持跨域</span>
+<span class="token comment">//4.返回值模板  需要后台提供对应接口文档</span>
+
+<span class="token comment">//原生 ajax</span>
+<span class="token comment">//XHR</span>
+<span class="token comment">//创建请求文档</span>
+
+<span class="token keyword">let</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//类似于构造函数</span>
+xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">&quot;get&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;http://jsonplaceholder.typicode.com/posts&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// open 方法创建对应请求，请求的地址，以及请求是否异步，默认异步，可以省略。</span>
+xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//send 是构造函数的一个方法，作用是将创建好的请求发出。</span>
+xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//onreadystatechange 事件，在事件请求过程中，实时返回各个阶段的信息</span>
+  <span class="token comment">//onload 监听请求是否成功</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">===</span> <span class="token number">4</span> <span class="token operator">&amp;&amp;</span> xhr<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">//获取的数据类型是JSON字符串类型，</span>
+  <span class="token comment">// 通过JSON.parse 方法将json串解析成对象</span>
+  <span class="token comment">// JSON.stringify(对象) 将对象解析成json串</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>post 请求
+（post 向后台传数据无数量限制，可以传输大量。post 比 get 更安全稳定）。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//创建文章</span>
+document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">&quot;.add&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;http://localhost:3008/posts&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  xhr<span class="token punctuation">.</span><span class="token function">setRequestHeader</span><span class="token punctuation">(</span><span class="token string">&quot;Content-type&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;application/json&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//设置请求头</span>
+
+  xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>
+    <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      titel<span class="token operator">:</span> <span class="token string">&quot;小龙的文章&quot;</span><span class="token punctuation">,</span>
+      author<span class="token operator">:</span> <span class="token string">&quot;小龙&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">===</span> <span class="token number">4</span> <span class="token operator">&amp;&amp;</span> xhr<span class="token punctuation">.</span>status <span class="token operator">&gt;=</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//方法为重蓝色，如为浅蓝色则拼写错误/</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="jquery-ajax"><a href="#jquery-ajax" class="header-anchor">#</a> jquery ajax</h4> <ul><li>$.ajax()</li> <li>$.get</li> <li>$.post</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//$.get</span>
+$<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts?id=3&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//在请求接口内直接填写参数，使用箭头函数</span>
+$<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//在$.get 方法内当成对象传递，使用普通函数，data为获取到的对象数组</span>
+
+<span class="token comment">// $.post</span>
+
+$<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>
+  <span class="token string">&quot;http://localhost:3008/posts&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> title<span class="token operator">:</span> <span class="token string">&quot;龙宝宝的笔记&quot;</span><span class="token punctuation">,</span> author<span class="token operator">:</span> <span class="token string">&quot;long&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//$.ajax</span>
+$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token operator">:</span> <span class="token string">&quot;http://localhost:3008/posts&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 请求地址</span>
+
+  type<span class="token operator">:</span> <span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 请求类型</span>
+
+  data<span class="token operator">:</span> <span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">4</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">//是：不是=</span>
+  <span class="token comment">// 传递的参数</span>
+
+  <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;请求成功了&quot;</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 请求成功</span>
+
+  <span class="token function">error</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;失败了&quot;</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// /请求失败</span>
+
+  <span class="token function">complete</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;success is&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 请求结束</span>
+
+$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token operator">:</span> <span class="token string">&quot;http://localhost:3008/posts&quot;</span><span class="token punctuation">,</span>
+
+  type<span class="token operator">:</span> <span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span>
+
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">&quot;龙宝宝的笔记&quot;</span><span class="token punctuation">,</span>
+    author<span class="token operator">:</span> <span class="token string">&quot;11&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">//是：不是=</span>
+  <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;请求成功了&quot;</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">error</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;失败了&quot;</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">complete</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;success is&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="axios"><a href="#axios" class="header-anchor">#</a> axios</h4> <p>axios 专门发送请求的<code>插件</code>
+需要安装依赖</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//需要先引入axios的cdn</span>
+<span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token comment">//get</span>
+axios
+  <span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot; http://localhost:3008/posts&quot;</span><span class="token punctuation">)</span>
+  <span class="token comment">//成功</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token comment">//res是经过封装处理的数据，里面包含请求的各种信息，里面的data为请求到的数据</span>
+  <span class="token comment">//失败</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//post</span>
+axios
+  <span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> title<span class="token operator">:</span> <span class="token string">&quot;axios 解析&quot;</span><span class="token punctuation">,</span> author<span class="token operator">:</span> <span class="token string">&quot;long&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// axios其他传参方式</span>
+<span class="token comment">// 仅get请求这样传递</span>
+<span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">1/2?ass=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>参数<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// ass 为参数名</span>
+</code></pre></div><h5 id="axios-并发请求"><a href="#axios-并发请求" class="header-anchor">#</a> axios 并发请求</h5> <p>同时发出多个请求并对其进行处理</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//并发请求</span>
+
+<span class="token comment">//请求1</span>
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts?id=1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;my is first&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//请求2</span>
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts?id=3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;my is last&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 并发请求</span>
+axios
+  <span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts?id=1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts?id=3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token comment">//一起进行then</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h5 id="axios-提取共有配置"><a href="#axios-提取共有配置" class="header-anchor">#</a> axios 提取共有配置</h5> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 提取公共配置，可自定义，可修改默认</span>
+<span class="token comment">//自定义一个实例</span>
+<span class="token keyword">const</span> my_axios <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  baseURL<span class="token operator">:</span> <span class="token string">&quot;http://localhost:3008&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 规定所有请求的前缀</span>
+  timeout<span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+  <span class="token comment">//规定请求时间</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+my_axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;/posts?id=5&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//默认</span>
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>baseURL <span class="token operator">=</span> <span class="token string">&quot;http://localhost:3008&quot;</span><span class="token punctuation">;</span>
+
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;/posts?id=7&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h5 id="axios-拦截器"><a href="#axios-拦截器" class="header-anchor">#</a> axios 拦截器</h5> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//拦截器</span>
+<span class="token comment">// 添加请求拦截器</span>
+axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 在发送请求之前做些什么</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+    <span class="token comment">//参数内容为有关请求的一些信息，可以对其修改并进行return</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 对请求错误做些什么</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 添加响应拦截器</span>
+axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 对响应数据做点什么</span>
+    <span class="token comment">//参数就是请求结果，可以在这里对结果进行修改，接下来获取的结果都是修改过的数据</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 对响应错误做点什么</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//已经为上面对请求结果已经进行了修改，所以不再需要进行data了</span>
+</code></pre></div><h5 id="基于-promise-的-async"><a href="#基于-promise-的-async" class="header-anchor">#</a> 基于 Promise 的 async</h5> <p>axios 为异步请求，通过 await 可以让页面先等待异步函数执行并获取到结果，然后开始渲染页面。await 必须在 async 关键字创建的函数内使用。
+可以理解为将异步函数变为同步</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">getPosts</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token function">getPosts</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//通常不能在异步函数执行前获取到异步函数内的数据</span>
+<span class="token comment">//在异步函数外获取内部参数</span>
+<span class="token keyword">const</span> <span class="token function-variable function">getPosts</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3008/posts&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//await 后一般跟着promise</span>
+  <span class="token comment">//async内的所有操作都需要在await后的代码完成后开始执行</span>
+  <span class="token keyword">return</span> res<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+  <span class="token comment">//return 返回的值会成为then方法的res参数</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token function">getPosts</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//通过catch可以获得错误信息。</span>
+</code></pre></div><h5 id="封装-axios"><a href="#封装-axios" class="header-anchor">#</a> 封装 axios</h5> <p>请求数据方式默认是本地跨域(域名不同、端口号不同、协议不同，任何一项不同都属于跨域，谷歌浏览器默认支持<code>本地</code>跨域)</p> <p>img 标签默认支持跨域</p> <p>http://10.128.69.115:8080/
+10.128.69.115 IP 地址
+8080 端口号</p> <p>对 axios 进行简单的封装</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//封装axios</span>
+
+<span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">&quot;axios&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">//设置基地址</span>
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>baseURL <span class="token operator">=</span> <span class="token string">&quot;http://localhost:3008/&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//设置超时时间</span>
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>timeout <span class="token operator">=</span> <span class="token number">2500</span><span class="token punctuation">;</span>
+<span class="token comment">//相应拦截，就是对请求结果进行一定的处理</span>
+axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//将 axios 设置成全局的</span>
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$axios <span class="token operator">=</span> axios<span class="token punctuation">;</span>
+<span class="token comment">// 导出;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> axios<span class="token punctuation">;</span>
+
+<span class="token comment">//最后需要将axios.js 导入main.js 中</span>
+<span class="token keyword">import</span> <span class="token string">&quot;./pligins/axios&quot;</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <!----></main> <!----></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/ThisLongHouse/assets/js/app.931cfb47.js" defer></script><script src="/ThisLongHouse/assets/js/5.264a65b6.js" defer></script><script src="/ThisLongHouse/assets/js/1.fa7ca16c.js" defer></script><script src="/ThisLongHouse/assets/js/33.cfe8075e.js" defer></script>
+  </body>
+</html>

@@ -18,3 +18,8 @@ actionText: Guide
 actionLink: /views/other/guide
 # npm run dev
 ---
+
+## 更新日志
+
+1.2.0
+1.3.0 修改部分文章标签以及图片失效的问题

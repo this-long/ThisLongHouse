@@ -3,10 +3,9 @@ title: 文章一览
 cover: https://img-blog.csdnimg.cn/fbee15b82e164f88a13ef3098e73d556.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAPGRpdiBjbGFzcz0n6b6Z5a6d5a6dJz4=,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center
 date: 2021-06-25
 tags:
-  - 其他
+  - Other
 categories:
   - 技术笔记
-sticky: 1
 ---
 
 ::: tip 介绍
@@ -23,4 +22,27 @@ sticky: 1
 
 ---
 
-JS 代码判断移动端和 PC 端
+2101 JS 代码判断移动端和 PC 端
+
+2102 GitHub 使用
+
+2103 MarkDown 文档的编写技巧
+2104 企业微信扫一扫-发票查验
+2105 元素居中定位的几种方法
+2106 闭包
+2107 原生 JS
+2108 ES6 入门
+2109 TypeScript 入门
+2110 VUE 基本使用
+2111 Vue Router
+2112 Element UI
+2113 VUE X
+2114 VUE 响应式原理浅析
+2115 webpack 入门
+2116 VUE 常用的插件库
+2117 实战案例总结
+2118 AJAX 相关
+2119 创建本地简易服务器
+2120 node+express 搭建简易服务器
+2122 企业微信生成第三方应用测试安装链接
+2123 Vue 实现页面添加水印功能

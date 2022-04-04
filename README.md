@@ -23,3 +23,12 @@ actionLink: /views/other/guide
 
 1.2.0
 1.3.0 修改部分文章标签以及图片失效的问题 -->
+
+<!-- 更新流程
+1、npm run build
+git add .
+git commit -m""
+git push
+
+复制dist转到中专git push
+ -->

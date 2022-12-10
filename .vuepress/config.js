@@ -1,5 +1,6 @@
 module.exports = {
   "base": '/ThisLongHouse/',
+  // "base": '/',
   "title": "ThisLong的小屋",
   "description": "长顺长安长相依，花开花谢花化泥,纪念我们逝去的时光。",
   "dest": "dist",
